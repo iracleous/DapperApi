@@ -30,7 +30,7 @@ namespace DapperApi.Controllers
         [Route("delete/{personId}")]
         public bool DeletePerson([FromRoute] long personId) => _service.DeletePerson(personId);
 
-        [HttpPut]
+        [HttpPost]
         [Route("update/{personId}")]
         public bool UpdatePerson([FromRoute] long personId, Person person) => _service.UpdatePerson(personId, person);
 
